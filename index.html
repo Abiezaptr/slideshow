@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Aurora Slide</title>
+
+    <meta
+      name="description"
+      content="A framework for easily creating beautiful presentations using HTML"
+    />
+    <meta name="author" content="Hakim El Hattab" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+
+  <style>
+    /* Animasi untuk teks muncul secara otomatis */
+    .automatic-fade-in {
+      opacity: 0;
+      animation: fade-in 1s ease-in-out forwards;
+    }
+
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section data-transition="slide-in fade-out">
+          <h3>The Sample Presentation</h3>
+          <p>
+            <small
+              >Created by
+              <a class="text-danger"
+                >Advance Analytics and Growth Marketing</a
+              ></small
+            >
+          </p>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 2rem;
+              border-top: 1px solid rgba(255, 255, 255, 0.1);
+              margin-top: 1.5rem;
+              padding-top: 1.5rem;
+            "
+          >
+            <small>Sponsored by</small>
+            <a href="https://codeless.co" rel="dofollow"
+              ><img
+                src="https://d1835mevib0k1p.cloudfront.net/reveal-js/sponsors/codeless_light.png"
+                width="200"
+                height="70"
+              /> </a
+            ><a href="https://slides.com" rel="dofollow"
+              ><img
+                src="https://d1835mevib0k1p.cloudfront.net/reveal-js/sponsors/slides-mono-white.png"
+                width="200"
+                height="70"
+            /></a>
+          </div>
+        </section>
+
+        <section
+          data-transition="fade-in slide-out"
+          data-background-transition="zoom"
+        >
+          <section id="fragments">
+            <h2>Hello There</h2>
+            <p class="fragment">
+              This slide will provide information about the data
+            </p>
+            <p class="fragment">
+              In the form of text, images, embedded links and much more
+            </p>
+          </section>
+        </section>
+
+        <!-- Example of nested vertical slides -->
+        <section>
+          <section>
+            <h2>Sample bar chart</h2>
+            <br />
+            <div class="chart-container">
+              <canvas id="barChart"></canvas>
+            </div>
+          </section>
+          <section>
+            <h2>Sample line chart</h2>
+            <br />
+            <div class="chart-container">
+              <canvas id="lineChart"></canvas>
+            </div>
+          </section>
+        </section>
+
+        <section
+          data-transition="slide"
+          data-background="#4d7e65"
+          data-background-transition="zoom"
+        >
+          <br />
+          <iframe
+            src="https://public.tableau.com/views/CreateParameter-DrivenTabsUsingDZV/TabsandDZV?:showVizHome=no&:embed=true"
+            width="1520px"
+            height="840px"
+          ></iframe>
+        </section>
+
+        <section
+          data-transition="slide"
+          data-background="#b5533c"
+          data-background-transition="zoom"
+        >
+          <h2>Column and row tables</h2>
+          <br />
+          <table>
+            <thead>
+              <tr>
+                <th>Region</th>
+                <th>Sales</th>
+                <th>Total</th>
+                <th>Rate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jakarta</td>
+                <td>5000000</td>
+                <td>1000</td>
+                <td>55%</td>
+              </tr>
+              <tr>
+                <td>Semarang</td>
+                <td>5500000</td>
+                <td>1100</td>
+                <td>75%</td>
+              </tr>
+              <tr>
+                <td>Yogyakarta</td>
+                <td>6000000</td>
+                <td>1200</td>
+                <td>80%</td>
+              </tr>
+              <!-- Tambahkan data analitik penjualan Telkomsel sesuai kebutuhan -->
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <section
+            data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)"
+          >
+            <h3>Customer Satisfaction Index Dashboard</h3>
+            <div class="card">
+              <img src="uploads/1694427766_CSI.png" alt="" />
+            </div>
+          </section>
+          <section
+            data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)"
+          >
+            <h3>HyperMicro Segmentation Dashboard</h3>
+            <div class="card">
+              <img src="uploads/1694493663_HMS.png" alt="" />
+            </div>
+          </section>
+          <section
+            data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)"
+          >
+            <h3>Prepaid Performance</h3>
+            <div class="card">
+              <img src="uploads/1694493727_Prepaid.png" alt="" />
+            </div>
+          </section>
+          <section
+            data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)"
+          >
+            <h3>Transactional Net Promotor Score</h3>
+            <div class="card">
+              <img src="uploads/1694493770_TNPS.png" alt="" />
+            </div>
+          </section>
+          <section
+            data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)"
+          >
+            <h3>CLS ChurnAnalysis</h3>
+            <div class="card">
+              <img src="uploads/1694493800_LOS.png" alt="" />
+            </div>
+          </section>
+          <section
+            data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)"
+          >
+            <h3>Telkomsel POIN Campaign Summary</h3>
+            <div class="card">
+              <img src="uploads/1694494580_EDA Dashboard.png" alt="" />
+            </div>
+          </section>
+        </section>
+
+        <section style="text-align: center">
+          <h1>THE END</h1>
+          <p>
+            <a class="text-primary">Thank you for your attention</a>
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/search/search.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+
+    <script>
+      Reveal.initialize({
+        // Konfigurasi lainnya
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+
+        // Konfigurasi Auto Slide
+        autoSlide: 5000, // Durasi dalam milidetik (misalnya, 5000 ms atau 5 detik)
+        autoSlideStoppable: true, // Apakah slide otomatis dapat dihentikan dengan interaksi pengguna
+
+        // Plugins lainnya
+        plugins: [
+          RevealZoom,
+          RevealNotes,
+          RevealSearch,
+          RevealMarkdown,
+          RevealHighlight,
+        ],
+      });
+    </script>
+
+    <script>
+      // Data untuk grafik batang (Bar Chart)
+      const barChartData = {
+        labels: ["Minggu 1", "Minggu 2", "Minggu 3", "Minggu 4"],
+        datasets: [
+          {
+            label: "Penjualan",
+            backgroundColor: ["maroon", "white", "green", "orange"], // Warna latar belakang berbeda untuk setiap data point
+            // borderColor: "red", // Warna garis tepi merah
+            borderWidth: 2, // Mengubah lebar batang menjadi lebih tebal (misalnya 2)
+            data: [50, 75, 60, 80],
+          },
+        ],
+      };
+
+      // Data untuk grafik garis (Line Chart)
+      const lineChartData = {
+        labels: ["Minggu 1", "Minggu 2", "Minggu 3", "Minggu 4"],
+        datasets: [
+          {
+            label: "Pendapatan",
+            borderColor: "red", // Warna garis merah
+            borderWidth: 4, // Mengubah lebar garis menjadi lebih tebal (misalnya 2)
+            data: [5000, 6000, 5500, 7000],
+            fill: false,
+          },
+        ],
+      };
+
+      // Inisialisasi dan gambar grafik batang
+      var barChartCanvas = document.getElementById("barChart").getContext("2d");
+      new Chart(barChartCanvas, {
+        type: "bar",
+        data: barChartData,
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+
+      // Inisialisasi dan gambar grafik garis
+      var lineChartCanvas = document
+        .getElementById("lineChart")
+        .getContext("2d");
+      new Chart(lineChartCanvas, {
+        type: "line",
+        data: lineChartData,
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
